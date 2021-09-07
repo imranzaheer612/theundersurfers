@@ -13,7 +13,7 @@ math:
 
 I am a student of computer science from [NUST]([nust.edu.pk]) 
 
-{{< figure src="/images/profile.jpg" title="Meet Me" >}}
+{{< figure src="profile.jpg" title="Meet Me" >}}
 
 * Here i will share with you some of my projects.
 * Get ready my friends we gonna dive deeper
