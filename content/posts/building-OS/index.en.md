@@ -10,7 +10,7 @@ resources:
 tags: ["OS"]
 categories: ["Project"]
 
-
+theme: "full"
 ---
 
 
