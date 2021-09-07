@@ -265,7 +265,7 @@ We will use the **Qemu** to emulate our 64-bit OS. As we run our
 **kernal.iso** file through the qemu we will see the output strings we
 printed using the C code.
 
-{{< figure src="/static/buildingOS/output.png" title="Output" >}}
+{{< figure src="output.png" title="Output" >}}
 
 
  You can see i printed NUST log using the print\_str() funtion we built
