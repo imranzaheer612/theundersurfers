@@ -9,9 +9,7 @@ resources:
 
 tags: ["wireless"]
 categories: ["security"]
-
 theme: "full"
-
 ---
 
 

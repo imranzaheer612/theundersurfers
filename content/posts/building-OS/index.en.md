@@ -5,11 +5,10 @@ lastmod: 2021-10-01T17:55:28+08:00
 description: "Building an 64-bit operating system."
 resources:
 - name: "featured-image"
-  src: "/featured-image.png"
+  src: "featured-image.png"
 
 tags: ["OS"]
 categories: ["Project"]
-
 theme: "full"
 ---
 
