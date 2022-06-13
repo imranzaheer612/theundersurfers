@@ -112,7 +112,7 @@ enableEmoji = true
       [languages.en.params.search]
         enable = true
         # type of search engine ("lunr", "algolia")
-        type = "algolia"
+        type = "lunr"
         # max index length of the chunked content
         contentLength = 4000
         # placeholder of the search bar
@@ -156,12 +156,12 @@ enableEmoji = true
       # Social config in home page
       [languages.en.params.social]
         GitHub = "https://github.com/imranzaheer612"
-        Linkedin = ""
-        Twitter = ""
+        Linkedin = "https://www.linkedin.com/in/imran-zaheer-116aa3229/"
+        Twitter = "https://twitter.com/ImranZa61398327"
         Instagram = "https://www.instagram.com/izr_612/"
         Facebook = ""
         Telegram = ""
-        Medium = ""
+        Medium = "https://medium.com/@izaheer612"
         Gitlab = ""
         Youtubelegacy = ""
         Youtubecustom = ""
