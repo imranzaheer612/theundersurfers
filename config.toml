@@ -91,7 +91,7 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "About uBlogger Theme"
+      description = "Blogs by Imran Zaheer"
       # site keywords
       keywords = ["Theme", "Hugo"]
       # App icon config
@@ -155,13 +155,13 @@ enableEmoji = true
           paginate = 6
       # Social config in home page
       [languages.en.params.social]
-        GitHub = "https://github.com/imranzaheer612"
-        Linkedin = "https://www.linkedin.com/in/imran-zaheer-116aa3229/"
-        Twitter = "https://twitter.com/ImranZa61398327"
-        Instagram = "https://www.instagram.com/izr_612/"
+        GitHub = "imranzaheer612"
+        Linkedin = "imran-zaheer-116aa3229/"
+        Twitter = "ImranZa61398327"
+        Instagram = "izr_612/"
         Facebook = ""
         Telegram = ""
-        Medium = "https://medium.com/@izaheer612"
+        Medium = "@izaheer612"
         Gitlab = ""
         Youtubelegacy = ""
         Youtubecustom = ""
@@ -443,7 +443,7 @@ enableEmoji = true
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       # 是否使侧边目录自动折叠展开
-      auto = true
+      auto = false
     # Code config
     # 代码配置
     [params.page.code]
@@ -666,7 +666,7 @@ enableEmoji = true
 # Author config
 # 作者配置
 [author]
-  name = "upagge.en"
+  name = "imran zaheer"
 
 # Sitemap config
 # 网站地图配置
