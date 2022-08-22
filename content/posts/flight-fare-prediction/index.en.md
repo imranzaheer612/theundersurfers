@@ -4,27 +4,36 @@ date: 2022-06-13T13:06:06+05:00
 draft: false
 
 description: "Flight Price Prediction."
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
 
-tags: ["AI", "Price Prediction", "Regression", "Hyper parameter tunning", "Eda", "One hot encoding"]
+resources:
+  - name: "featured-image"
+    src: "featured-image.webp"
+
+tags:
+  [
+    "AI",
+    "Price Prediction",
+    "Regression",
+    "Hyper parameter tunning",
+    "Eda",
+    "One hot encoding",
+  ]
 categories: ["AI"]
 theme: "full"
 ---
 
+We used the principles of machine learning to build a model that would be able to provide us with an optimal solution concerning the specific requirement of someone who requires to obtain the ticket
 
- We used the principles of machine learning to build a model that would be able to provide us with an optimal solution concerning the specific requirement of someone who requires to obtain the ticket
 <!--more-->
 
 # Flight Price Prediction Regression Model
-
 
 ![](https://miro.medium.com/max/1400/1*ue7rVAOCZioo3lmmjQVxnw.jpeg)Price prediction model
 
 It was our end-semester project for our course on AI. We used the principles of machine learning to build a model that would be able to provide us with an optimal solution concerning the specific requirement of someone who requires to obtain the ticket.
 
 ## Data set
+
 The data set is an Indian data set taken from Kaggle. You can find it [here](https://www.kaggle.com/datasets/sanjaromonov/aviachipta-narxini-bashorat-qilish?select=train_data.csv).
 
 ## EDA
@@ -39,8 +48,8 @@ All Machine Learning models are some kinds of a mathematical model that needs nu
 
 First, let’s understand the types of categorical data:
 
-*   **Nominal Data:** The nominal data is called labeled/named data. Allowed to change the order of categories, change in order doesn’t affect its value. For example, Gender (Male/Female/Other), Age Groups (Young/Adult/Old), etc.
-*   **Ordinal Data:** Represent discretely and ordered units. Same as nominal data but have ordered/rank. Not allowed to change the order of categories. For example, Ranks: 1st/2nd/3rd, Education: (High School/Undergrads/Postgrads/Doctorate), etc.
+- **Nominal Data:** The nominal data is called labeled/named data. Allowed to change the order of categories, change in order doesn’t affect its value. For example, Gender (Male/Female/Other), Age Groups (Young/Adult/Old), etc.
+- **Ordinal Data:** Represent discretely and ordered units. Same as nominal data but have ordered/rank. Not allowed to change the order of categories. For example, Ranks: 1st/2nd/3rd, Education: (High School/Undergrads/Postgrads/Doctorate), etc.
 
 ### One Hot Encoding
 
@@ -52,7 +61,7 @@ While this is helpful for some ordinal situations, some input data does not have
 
 ![](https://miro.medium.com/max/756/1*O3qL0f81gRcA87GP6_u5jg.jpeg)one hot encoding on “class” colums
 
-The _stops_ column was using **ordinal data** so  we used simple number mapping for its encoding.
+The _stops_ column was using **ordinal data** so we used simple number mapping for its encoding.
 
 ```
 train\_data.replace({“one”:1, “zero”:0, “two\_or\_more”:2},inplace = True)
@@ -70,17 +79,15 @@ After feature extraction, we were able to see which features were playing the mo
 
 ## Regression Models
 
-
 Now we applied some regression models and calculated the score for each scenario.
 
-*   Decision Tree Regressor
-*   SVR
-*   K-Neighbors Regressor
-*   Elastic Net
-*   Random Forest Regressor
-*   Lasso
-*   Linear Regression
-
+- Decision Tree Regressor
+- SVR
+- K-Neighbors Regressor
+- Elastic Net
+- Random Forest Regressor
+- Lasso
+- Linear Regression
 
 ```
 from sklearn.linear_model import LinearRegression
@@ -120,14 +127,11 @@ for name, model in models:
 
 Keeping in view the results we applied the random forest regression.
 
-
 {{< figure src="https://miro.medium.com/max/534/1*vSfUTwsSMovu9zrodOBhFA.jpeg" title="Applied random forest on the data" >}}
-
 
 {{< figure src="https://miro.medium.com/max/896/1*wrAVmgsFamrGJOLE76hOHw.jpeg" title="Graph showing that how good was our model in predicting the values correctly" >}}
 
 ## Hyper Parameters Tunning
-
 
 We used the **Randomized CV Search technique** here. For random forest, we used the following parameters
 
@@ -158,4 +162,3 @@ Now when we again trained our data using these parameters our score turns out to
 You can find the whole source code here
 
 {{< link "https://github.com/imranzaheer612/flight-fare-prediction-regression/blob/main/Untitled.ipynb" >}}
-

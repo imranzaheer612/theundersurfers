@@ -5,8 +5,9 @@ draft: false
 
 description: "Helmet is a node package help secure Express apps with various HTTP headers "
 
-featuredImage: "https://repository-images.githubusercontent.com/3329923/2fd1c70a-c521-4087-9c1d-bf3e1fff3e4d"
-featuredImagePreview: "https://repository-images.githubusercontent.com/3329923/2fd1c70a-c521-4087-9c1d-bf3e1fff3e4d"
+resources:
+  - name: "featured-image"
+    src: "featured-image.png"
 
 tags: ["web", "security"]
 categories: ["WEB"]
