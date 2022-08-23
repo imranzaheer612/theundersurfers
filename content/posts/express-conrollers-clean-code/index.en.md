@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["web", "security"]
+tags: ["node express controllers", "api", "clean code", "node", "express"]
 categories: ["WEB"]
 theme: "full"
 ---
