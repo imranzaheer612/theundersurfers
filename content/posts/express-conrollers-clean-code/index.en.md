@@ -1,5 +1,5 @@
 ---
-title: "Express Conrollers Clean Code"
+title: "Write Express Controllers like a pro."
 date: 2022-08-23T16:00:41+05:00
 draft: false
 
