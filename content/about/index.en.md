@@ -17,7 +17,7 @@ math:
     <b>M.Imran Zaheer</b> 
     <br/>
     <a href="https://github.com/imranzaheer612"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> GitHub |</a>
-    <a href="https://www.linkedin.com/in/imran-zaheer-116aa3229/"><img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1660824299~hmac=4e39db3243024612a03da4498dc20c5e" width=16 align="center"> LinkedIn |</a>
+    <a href="https://www.linkedin.com/in/imran-zaheer-116aa3229/"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width=16 align="center"> LinkedIn |</a>
     <a href="https://theundersurfers.netlify.app/"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width=16 align="center"> Website</a>
 </div>
 
@@ -34,6 +34,23 @@ math:
 - ⚡ Keyword **Do it until you make it.**
 
 ### Projects
+
+<div align="left">
+    <h4 align="center">Natours</h4>
+    <p align="center">
+        📍 Take a look at the tours and book a tour you wanna enjoy.<br/>
+        <b>Natours</b> provides you opportunities to go on amazing tours<br/>
+        Server Side Rendering, Node, MongoDb, Express, Stripe, Send Grid, Pug <br/>
+        You can take a look at the 
+        <a href="https://natours-fun.herokuapp.com/">natours-fun.herokuapp.com<a> 
+        <br/><br/><br/>
+        <img src="https://github.com/imranzaheer612/tours-app/raw/main/pics/mapbox.jpg" width=800>
+    </p>
+    <p align="right"><a href="https://github.com/imranzaheer612/tours-app">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
+</div>
+
+---
 
 <div align="left">
     <h4 align="center">MemoBooks MERN APP</h4>
