@@ -91,7 +91,7 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Blogs by Imran Zaheer"
+      description = "Development Blogs by Imran Zaheer that will help you learn new stuff."
       # site keywords
       keywords = ["Theme", "Hugo"]
       # App icon config
@@ -116,7 +116,7 @@ enableEmoji = true
         # max index length of the chunked content
         contentLength = 4000
         # placeholder of the search bar
-        placeholder = ""
+        placeholder = "Search blogs"
         # max number of results length
         maxResultLength = 10
         # snippet length of the result
@@ -233,7 +233,7 @@ enableEmoji = true
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://github.com/upagge/dolboblog-theme"
+  gitRepo = "https://github.com/imranzaheer612"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
