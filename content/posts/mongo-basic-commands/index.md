@@ -1,5 +1,5 @@
 ---
-title: "Mongo Basic Commands"
+title: "Mongo Basic Commands every Developer should know"
 date: 2022-09-14T18:51:00+05:00
 draft: false
 
