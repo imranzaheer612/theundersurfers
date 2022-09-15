@@ -139,7 +139,7 @@ enableEmoji = true
           # Gravatar Email for preferred avatar in home page
           gravatarEmail = ""
           # URL of avatar shown in home page
-          avatarURL = "/images/avatar.jpg"
+          avatarURL = "/images/avatar.png"
           # title shown in home page (HTML format is supported)
           title = "theUnderSurfers"
           # subtitle shown in home page (HTML format is supported)
@@ -555,7 +555,7 @@ enableEmoji = true
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
+    google = "k5MKEQW9yww-eDuq4fxvpXfoHE7cQbm06_zNJo7wzsk"
     bing = ""
     yandex = ""
     pinterest = ""
@@ -579,10 +579,10 @@ enableEmoji = true
     [params.analytics.google]
       # [UA-XXXXXXXX-X] google analytics code
       # [UA-XXXXXXXX-X] 谷歌分析代号
-      id = ""
+      id = "G-WV4X6YGHKX"
       # whether to use gtag linked
       # 是否使用gtag链接
-      gtag = false
+      gtag = true
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
@@ -593,7 +593,7 @@ enableEmoji = true
       # 自行托管追踪器时的主机路径
       server = ""
     [params.analytics.yandex]
-      id = "70532758"
+      # id = "70532758"
 
   # Cookie consent config
   # Cookie 许可配置
