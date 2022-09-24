@@ -8,7 +8,7 @@ resources:
     src: "featured-image.webp"
 
 tags: ["wireless", "rc4", "wep working", "Wired Equivalent Privacy"]
-categories: ["security", "wireless"]
+categories: ["Network Security"]
 theme: "full"
 ---
 

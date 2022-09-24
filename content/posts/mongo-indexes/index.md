@@ -1,7 +1,7 @@
 ---
 title: "Increase Mongo querying efficiency using Indexes."
 date: 2022-09-24T21:11:39+05:00
-draft: true
+draft: false
 
 description: "You can increase the speed of searching your document by using the idea of indexes in MongoDB. It will take some space but in the end, will provide you with great speed."
 

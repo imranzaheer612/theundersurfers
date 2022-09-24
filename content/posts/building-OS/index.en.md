@@ -9,7 +9,7 @@ resources:
     src: "featured-image.png"
 
 tags: ["OS"]
-categories: ["Project"]
+categories: ["OS"]
 theme: "full"
 ---
 
