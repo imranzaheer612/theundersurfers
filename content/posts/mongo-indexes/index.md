@@ -16,8 +16,6 @@ theme: "full"
 
 <!--more-->
 
-# Mongoose/Mongo Advance Concepts
-
 You can increase the speed of searching your document by using the idea of indexes in MongoDB. It will take some space but in the end, will provide you with great speed.
 
 ## What is an index?
@@ -42,7 +40,7 @@ Let's try querying some documents. I have a `Tour` collection having some info a
 
 I have an API attached to my database. I will try searching for some documents based on the price.
 
-```jsx
+```js
 {{URL}}api/v1/tours?price[lt]=1000
 ```
 
@@ -67,7 +65,7 @@ After setting the index on the PRICE field you can see our performance increased
 
 MongoDB supports _compound indexes,_ where a single index structure holds references to multiple fields within a collection's documents.
 
-```jsx
+```js
 // Creating Index
 tourSchema.index({ price: 1 });
 
@@ -77,7 +75,7 @@ tourSchema.index({ price: 1, ratingsAverage: -1 });
 
 You can also make a compound index like shown above. It is used when you are trying to query on the basis of two fields so you can mark them both as an index
 
-```jsx
+```js
 {{URL}}api/v1/tours?price[lt]=1000&ratingsAverage[gte]=4.
 ```
 
