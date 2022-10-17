@@ -7,3 +7,25 @@ $header-background-color: #ececec;
 
 $global-font-color-dark: #DDD;
 
+/**
+* Code Line number edit
+*/
+code:not([class*="language-"]) {
+    line-height: normal;
+    // background: #f5f2f0;
+    padding: 0rem !important;
+    // border-radius: 3px;
+    // font-size: 0.8em;
+}
+
+/**
+* Code line number edit
+*/
+// td.lntd {
+//     width: 10%;
+// }
+
+
+.highlight:has(code) {
+    line-height: 1.25;
+}
