@@ -31,6 +31,12 @@ $global-font-color-dark: #DDD;
 // }
 
 
+
+.single a {
+    border-bottom: none !important;
+}
+
+
 // post open in new tab
 // changed to open in current tab by removing target in the html element
 // file changed \themes\uBlogger\layouts\_default\summary.html
