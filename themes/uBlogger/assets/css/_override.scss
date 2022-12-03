@@ -7,25 +7,34 @@ $header-background-color: #ececec;
 
 $global-font-color-dark: #DDD;
 
-/**
-* Code Line number edit
-*/
-code:not([class*="language-"]) {
-    line-height: normal;
-    // background: #f5f2f0;
-    padding: 0rem !important;
-    // border-radius: 3px;
-    // font-size: 0.8em;
-}
+// /**
+// * Code Line number edit
+// */
+// code:not([class*="language-"]) {
+//     line-height: normal;
+//     // background: #f5f2f0;
+//     padding: 0rem !important;
+//     // border-radius: 3px;
+//     // font-size: 0.8em;
+// }
 
-/**
-* Code line number edit
-*/
-// td.lntd {
-//     width: 10%;
+// /**
+// * Code line number edit
+// */
+// // td.lntd {
+// //     width: 10%;
+// // }
+
+
+// .highlight:has(code) {
+//     line-height: 1.25;
 // }
 
 
-.highlight:has(code) {
-    line-height: 1.25;
-}
+// post open in new tab
+// changed to open in current tab by removing target in the html element
+// file changed \themes\uBlogger\layouts\_default\summary.html
+
+// <!-- <a href="{{ $.RelPermalink }}" target="_blank"> -->
+// changed to
+// <!-- <a href="{{ $.RelPermalink }}"> -->
