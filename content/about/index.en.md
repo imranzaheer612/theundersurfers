@@ -7,8 +7,9 @@ math:
   enable: true
 ---
 
+<!--
 <h4 align="center">Hi 👋, I'm M.Imran Zaheer</h1>
-<h4 align="center">Programmer | Tech enthusiast</h3>
+<h4 align="center">Programmer | Tech enthusiast</h3> -->
 
 <br>
 
@@ -16,20 +17,21 @@ math:
     <img src="profile.jpg" width=150> <br/>
     <b>M.Imran Zaheer</b> 
     <br/>
-    <a href="https://github.com/imranzaheer612"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> GitHub |</a>
-    <a href="https://www.linkedin.com/in/imran-zaheer-116aa3229/"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width=16 align="center"> LinkedIn |</a>
-    <a href="https://theundersurfers.netlify.app/"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width=16 align="center"> Website</a>
+    <a href="https://github.com/imranzaheer612"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=16 align="center"> GitHub | </a>
+    <a href="https://www.linkedin.com/in/imran-zaheer-116aa3229/"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width=16 align="center"> Linkedin | </a>
+    <a href="https://medium.com/@izaheer612"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" width=16 align="center"> Medium</a>
+    <!-- <a href="https://theundersurfers.netlify.app/"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width=16 align="center"> Website</a> -->
+
 </div>
 
 ### About
 
-**_theundersurfers_** is my blogging site.
+**`Digital Craftsman (Developer/Creator)`**
 
-- 👨‍🎓 Computer Science student at [NUST]([nust.edu.pk])
-- 🌱 Learning new topics: **Networking, Cybersecurity, Web**
-- 👨‍💻 All of my projects are available at [https://github.com/imranzaheer612](https://github.com/imranzaheer612)
-- 📝 I regularly write articles on [https://theundersurfers.netlify.app](https://theundersurfers.netlify.app)
-- 💬 Ask me about **Web Development, Programming, Networking**
+I'm an indie software developer and tech enthusiast. All coding projects are built from the ground up, from planning and designing to solving real-life problems with code. Love to work on new technologies and am always eager to learn new ones. Interested in Networks, Web, and System Designs.
+
+**_[thenundersurfers](https://theundersurfers.netlify.app/)_** is my blogging site.
+
 - 📫 How to reach me **izaheer612@gmail.com**
 - ⚡ Keyword **Do it until you make it.**
 
@@ -147,7 +149,7 @@ math:
 ### Follow me on:
 
 <p align="left">
-<a href="https://twitter.com/imranza61398327" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="imranza61398327" height="30" width="40" /></a>
+<a href="https://twitter.com/imranzaheer612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="imranza61398327" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/imran-zaheer-116aa3229" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imran-zaheer-116aa3229" height="30" width="40" /></a>
 <a href="https://instagram.com/izr_612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="izr_612" height="30" width="40" /></a>
 <a href="https://hashnode.com/@imranzaheer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="@imranzaheer" height="30" width="40" /></a>
