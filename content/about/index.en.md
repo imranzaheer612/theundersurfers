@@ -17,9 +17,9 @@ math:
     <img src="profile.jpg" width=150> <br/>
     <b>M.Imran Zaheer</b> 
     <br/>
-    <a href="https://github.com/imranzaheer612"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=16 align="center"> GitHub | </a>
-    <a href="https://www.linkedin.com/in/imran-zaheer-116aa3229/"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width=16 align="center"> Linkedin | </a>
-    <a href="https://medium.com/@izaheer612"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" width=16 align="center"> Medium</a>
+    <a href="https://github.com/imranzaheer612"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=16> GitHub <> </a>
+    <a href="https://www.linkedin.com/in/imran-zaheer-116aa3229/"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" width=16> Linkedin <> </a>
+    <a href="https://medium.com/@izaheer612"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" width=16 > Medium </a>
     <!-- <a href="https://theundersurfers.netlify.app/"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width=16 align="center"> Website</a> -->
 
 </div>
