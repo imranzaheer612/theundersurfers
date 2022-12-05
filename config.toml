@@ -550,7 +550,7 @@ enableEmoji = true
       # 出版者信息
       [params.page.seo.publisher]
         name = "imran"
-        logoUrl = "/images/avatar.jpg"
+        logoUrl = "/images/site.jpg"
 
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
