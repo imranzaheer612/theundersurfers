@@ -18,7 +18,7 @@ tags:
     "Eda",
     "One hot encoding",
   ]
-categories: ["AI"]
+categories: ["AI", "Documentation"]
 theme: "full"
 ---
 
