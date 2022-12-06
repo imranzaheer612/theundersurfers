@@ -168,7 +168,7 @@ Now when creating a new DB we have to create age extension in order to start usi
 ```bash
 CREATE EXTENSION age;
 LOAD 'age';
-SET search_path TO ag_catalog;
+SET search_path = ag_catalog, "$user", public;
 ```
 
 Now try some queries having cypher commands.
@@ -264,7 +264,7 @@ SELECT * FROM cypher('demo_graph', $$ CREATE (n:Country{name : "US"}) $$) AS (a 
 Now create a relationship between them.
 
 ```bash
-SELECT * FROM cypher('demo_graph', $$ MATCH (a:Person), (b:Country) WHERE a.bornIn = b.name CREATE (a)-[r:BORNIN]->(b) RETURN r $$) as (r agtype)
+SELECT * FROM cypher('demo_graph', $$ MATCH (a:Person), (b:Country) WHERE a.bornIn = b.name CREATE (a)-[r:BORNIN]->(b) RETURN r $$) as (r agtype);
 ```
 
 Now we can visualize our whole graph created.
