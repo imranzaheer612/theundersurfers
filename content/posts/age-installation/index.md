@@ -46,6 +46,14 @@ So in case, you have ubuntu installed
 sudo apt-get install build-essential libreadline-dev zlib1g-dev flex bison
 ```
 
+It is also recommended to install `postgresql-server-dev-xx` package. These are development files for PostgreSQL server-side programming. For example if you are using ubuntu.
+
+```
+sudo apt install postgresql-server-dev-11
+```
+
+Further you can refer to [https://age.apache.org/age-manual/master/intro/setup.html#postgres-11](https://age.apache.org/age-manual/master/intro/setup.html#postgres-11)
+
 ## Installing From source
 
 ### PostgreSQL
