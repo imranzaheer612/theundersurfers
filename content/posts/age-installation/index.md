@@ -12,9 +12,9 @@ resources:
 tags: ["apache", "graphs"]
 categories: ["Database", "Documentation"]
 theme: "full"
-images: ["./age-installation/featured-image.webp"]
+images: ["/age-installation/featured-image.webp"]
 seo:
-  images: ["./age-installation/featured-image.webp"]
+  images: ["/age-installation/featured-image.webp"]
 ---
 
 <!--more-->
