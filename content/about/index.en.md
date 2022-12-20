@@ -5,6 +5,10 @@ draft: false
 
 math:
   enable: true
+
+images: ["https://theundersurfers.netlify.app/about/profile.jpg"]
+seo:
+  images: ["https://theundersurfers.netlify.app/about/profile.jpg"]
 ---
 
 <!--
