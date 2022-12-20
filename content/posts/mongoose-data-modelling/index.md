@@ -3,7 +3,7 @@ title: "MongoDB Data Modelling"
 date: 2022-09-22T12:54:31+05:00
 draft: false
 
-description: "Mongoose advance data modelling techniques. Apply these techniques to increase the querying speed and efficiency of you database."
+description: "Normalize or De-normalize your data according to the need. Learn mongoose advance data modelling techniques that will increase your database efficiency and performance."
 
 resources:
   - name: "featured-image"
