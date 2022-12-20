@@ -91,7 +91,7 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Development Blogs by Imran Zaheer. Learn about technologies, best practices and problems faced in Software Engineering."
+      description = "Development Blogs by Imran Zaheer. Learn about new technologies, best practices and problems faced in Software Engineering."
       # site keywords
       keywords = ["Theme", "Hugo"]
       # App icon config
