@@ -1,5 +1,5 @@
 ---
-title: "Mongoose Data Modelling"
+title: "MongoDB Data Modelling"
 date: 2022-09-22T12:54:31+05:00
 draft: false
 
@@ -12,6 +12,9 @@ resources:
 tags: ["database", "mongodb", "mongoose", "data modelling"]
 categories: ["DATABASE"]
 theme: "full"
+images: ["https://theundersurfers.netlify.app/mongoose-data-modelling/featured-image.png"]
+seo:
+  images: ["https://theundersurfers.netlify.app/mongoose-data-modelling/featured-image.png"]
 ---
 
 <!--more-->
