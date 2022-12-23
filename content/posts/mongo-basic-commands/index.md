@@ -7,14 +7,14 @@ description: "Create, Update & Querying MongoDB Commands"
 
 resources:
   - name: "featured-image"
-    src: "featured-image.webp"
+    src: "featured-image.png"
 
 tags: ["web", "database", "mongodb", "mongodb shell"]
 categories: ["DATABASE"]
 theme: "full"
-images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.webp"]
+images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.png"]
 seo:
-  images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.webp"]
+  images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.png"]
 ---
 
 <!--more-->
