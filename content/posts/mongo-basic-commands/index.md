@@ -12,6 +12,9 @@ resources:
 tags: ["web", "database", "mongodb", "mongodb shell"]
 categories: ["DATABASE"]
 theme: "full"
+images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.webp"]
+seo:
+  images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.webp"]
 ---
 
 <!--more-->
