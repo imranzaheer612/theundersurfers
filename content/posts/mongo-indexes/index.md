@@ -3,15 +3,19 @@ title: "Increase Mongo querying efficiency using Indexes."
 date: 2022-09-24T21:11:39+05:00
 draft: false
 
-description: "You can increase the speed of searching your document by using the idea of indexes in MongoDB. It will take some space but in the end, will provide you with great speed."
+description: "By using the idea of indexes in you can increase database speed for searching your document/record . It will take up some storage space but will provide you with great efficiency."
 
 resources:
   - name: "featured-image"
-    src: "featured-image.jpg"
+    src: "featured-image.png"
 
 tags: ["database", "mongodb", "mongoose", "indexes"]
 categories: ["DATABASE"]
 theme: "full"
+
+images: ["https://theundersurfers.netlify.app/mongo-indexes/featured-image.png"]
+seo:
+  images: ["https://theundersurfers.netlify.app/mongo-indexes/featured-image.png"]
 ---
 
 <!--more-->
