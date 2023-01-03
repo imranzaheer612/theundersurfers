@@ -223,8 +223,8 @@ enableEmoji = true
         Udemy = ""
         RSS = true
         #[languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+          # id = "@xxxx"
+          # prefix = "https://mastodon.technology/"
 
 [params]
   # uBlogger theme version
