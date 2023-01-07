@@ -12,9 +12,11 @@ resources:
 tags: ["apache", "graphs"]
 categories: ["Database", "Documentation"]
 theme: "full"
-images: ["https://theundersurfers.netlify.app/age-installation/featured-image.webp"]
+images:
+  ["https://theundersurfers.netlify.app/age-installation/featured-image.webp"]
 seo:
-  images: ["https://theundersurfers.netlify.app/age-installation/featured-image.webp"]
+  images:
+    ["https://theundersurfers.netlify.app/age-installation/featured-image.webp"]
 ---
 
 <!--more-->
@@ -23,7 +25,7 @@ seo:
 
 This article will explain to you how to install age on your Linux machine from the source. For macOS users, there is a detailed video for the overall installation process. Linux users can also watch this video as most of the steps are identical.
 
-{{< youtube Vt06H5RARcs >}}
+{{< youtube 0-qMwpDh0CA >}}
 
 ### Getting Started
 
