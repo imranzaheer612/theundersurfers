@@ -127,9 +127,9 @@ make PG_CONFIG=/home/imran/age_installation/pg/postgresql-11.18/bin/pg_config in
 
 ![Untitled](https://firebasestorage.googleapis.com/v0/b/imagehosting-d913b.appspot.com/o/Install%20AGE%20on%20you%20Machine%20d9843f0f39df418e80ca089691cec847_Untitled_1670247501531..png?alt=media&token=9f32b65b-6133-40aa-9784-364ddf4a52c1)
 
-## Starting DB
+## DB Initialization
 
-Now we will start the DB and will configure it to use AGE extension.
+Now we will initialize the database cluster using the `initdb`
 
 ```bash
 cd postgresql-11.18/
@@ -138,19 +138,19 @@ cd postgresql-11.18/
 bin/initdb demo
 ```
 
-So we named over database `demo`.
+So we named our database cluster `demo`.
+
+### Start Server
 
 Now start the server and make a database named `demodb`
 
 ```bash
 bin/pg_ctl -D demo -l logfile start
 bin/createdb demodb
-
-or
-
-# if you wanna change the port to 5430
-bin/createdb --port=5430 demodb
 ```
+
+If you wanna change the port number use `bin/createdb --port=5430 demodb`
+
 
 ### Start Querying
 
@@ -158,14 +158,13 @@ AGE added to pg successfully. Now we can enter in to `pg_sql` console to start t
 
 ```bash
 bin/psql demodb
-
-or
-
-# if you wanna change the port to 5430
-bin/createdb --port=5430 demodb
 ```
+If you have server running on some other port like in my case it is 5430 use `bin/createdb --port=5430 demodb`
 
-Now when creating a new DB we have to create age extension in order to start using AGE. Also, we need to set `search_path` and other variables if didn’t set them earlier in the `/postgresql.conf` file.
+Now when you have initialize a new DB we have to load the AGE extension in order to start using AGE. Also, we need to set `search_path` and other variables if didn’t set them earlier in the `/postgresql.conf` file.
+
+> Note that you can also set these parameter in the `postgresql.conf` file. [See more](#config-file)
+
 
 ```bash
 CREATE EXTENSION age;
@@ -295,7 +294,7 @@ search_path = 'ag_catalog, "$user", public'
 
 You can also set these variables using the commands shown earlier.
 
-### Error with WSL
+### Error with WSL 
 
 When installing age-viewer. If you are using WSL restart it from PowerShell after installing `node, npm` using `wsl --shutdown`. WSL path variable can intermingle with node path variable installed on windows. [https://stackoverflow.com/questions/67938486/after-installing-npm-on-wsl-ubuntu-20-04-i-get-the-message-usr-bin-env-bash](https://stackoverflow.com/questions/67938486/after-installing-npm-on-wsl-ubuntu-20-04-i-get-the-message-usr-bin-env-bash)
 
