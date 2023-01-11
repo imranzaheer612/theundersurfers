@@ -151,7 +151,6 @@ bin/createdb demodb
 
 If you wanna change the port number use `bin/createdb --port=5430 demodb`
 
-
 ### Start Querying
 
 AGE added to pg successfully. Now we can enter in to `pg_sql` console to start testing.
@@ -159,12 +158,12 @@ AGE added to pg successfully. Now we can enter in to `pg_sql` console to start t
 ```bash
 bin/psql demodb
 ```
+
 If you have server running on some other port like in my case it is 5430 use `bin/createdb --port=5430 demodb`
 
 Now when you have initialize a new DB we have to load the AGE extension in order to start using AGE. Also, we need to set `search_path` and other variables if didn’t set them earlier in the `/postgresql.conf` file.
 
 > Note that you can also set these parameter in the `postgresql.conf` file. [See more](#config-file)
-
 
 ```bash
 CREATE EXTENSION age;
@@ -219,22 +218,39 @@ npm run setup
 npm run start
 ```
 
-Viewer will now be running. Enter the details required to login
+Viewer will now be running on the localhost. Now connect the viewer with the database server.Enter the details required to login
 
 ```bash
 # address (default : localhost)
-url: localhost;
+url: server_url;
 
 # port_num (default 5432)
-port: 5432;
+port: port_num;
 
-# root user name of pc
+# username for the database
 username: username;
 
-# set a pass
+# password for the user
 pass: password;
 
-# db name you set earlier
+# database name you wanna connect to
+dbname: demodb;
+```
+
+**Note** that If you are following the above steps and installed postgres form source, then postgres a user would be created automatically during the installation. The `username` will be same as the name of your linux user. In my case a user with name `imran` was created as my linux user name was `imran`. Also there would be no password on this default user, you can set the password later.
+
+In my case i used the following settings.
+
+```bash
+url: localhost;
+
+port: 5432;
+
+username: imran;
+
+# radom pass as password is not set for this user.
+pass: 1234;
+
 dbname: demodb;
 ```
 
@@ -244,7 +260,7 @@ dbname: demodb;
 
 Now try creating some nodes and then you can visualize their relationship on the age-viewer.
 
-First we will create PERSON nodes
+First we will create `PERSON` nodes
 
 ```bash
 SELECT * FROM cypher('demo_graph', $$ CREATE (n:Person {name : "imran", bornIn : "Pakistan"}) $$) AS (a agtype);
@@ -255,7 +271,7 @@ SELECT * FROM cypher('demo_graph', $$ CREATE (n:Person {name : "james", bornIn :
 SELECT * FROM cypher('demo_graph', $$ CREATE (n:Person {name : "david", bornIn : "US"}) $$) AS (a agtype);
 ```
 
-Now creates some nodes of COUNTRY.
+Now creates some nodes of `COUNTRY`.
 
 ```bash
 SELECT * FROM cypher('demo_graph', $$ CREATE (n:Country{name : "Pakistan"}) $$) AS (a agtype);
@@ -280,7 +296,7 @@ SELECT * from cypher('demo_graph', $$ MATCH (a:Person)-[r]-(b:Country) WHERE a.b
 
 ### Config File
 
-In case you want to change the port number (default5432) and other variables you can take a look at the`demo/postgresql.conf` file.
+In case you want to change the port number (default5432) and other variables you can take a look at the`demo/postgresql.conf` file. You have to restart the server after that. Setting the parameters here will save you from the initialization commands like `LOAD 'age';` as used earlier.
 
 ```python
 nano demo/postgresql.conf
@@ -294,7 +310,7 @@ search_path = 'ag_catalog, "$user", public'
 
 You can also set these variables using the commands shown earlier.
 
-### Error with WSL 
+### Error with WSL
 
 When installing age-viewer. If you are using WSL restart it from PowerShell after installing `node, npm` using `wsl --shutdown`. WSL path variable can intermingle with node path variable installed on windows. [https://stackoverflow.com/questions/67938486/after-installing-npm-on-wsl-ubuntu-20-04-i-get-the-message-usr-bin-env-bash](https://stackoverflow.com/questions/67938486/after-installing-npm-on-wsl-ubuntu-20-04-i-get-the-message-usr-bin-env-bash)
 
