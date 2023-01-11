@@ -23,6 +23,15 @@ seo:
 
 ## Install AGE & PSQL from Source
 
+You can convert you existing relational database to a graph database by simply adding an extension.
+Apache AGE is a PostgreSQL extension that provides graph database functionality. It enables users to leverage a graph database on top of the existing relational databases.
+
+We will take a look at
+
+- _Installing Postgres from source._
+- _Installing & configuring Apache AGE with Postgres._
+- _Installing AGE-Viewer for Graphs analysis._
+
 This article will explain to you how to install age on your Linux machine from the source. For macOS users, there is a detailed video for the overall installation process. Linux users can also watch this video as most of the steps are identical.
 
 {{< youtube 0-qMwpDh0CA >}}
