@@ -325,7 +325,7 @@ When installing age-viewer. If you are using WSL restart it from PowerShell afte
 
 Now start WSL again. Don’t forget to start the pg server again after the WSL restart. Run server again using `bin/pg_ctl -D demo -l logfile start` .
 
-## Acknowledgement
+## Acknowledgment
 
 These resources helped me a lot during the installation. You can also refer to these if help is needed.
 
