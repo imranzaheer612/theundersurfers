@@ -336,7 +336,7 @@ enableEmoji = true
       enable = true
       # Disqus shortname to use Disqus in posts
       # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
-      shortname = "Imran"
+      shortname = "theundersurfers"
     # Gitalk comment config (https://github.com/gitalk/gitalk)
     # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
     [params.comment.gitalk]
