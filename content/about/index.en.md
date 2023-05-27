@@ -38,6 +38,7 @@ I'm an indie software developer and tech enthusiast. All coding projects are bui
 
 - 📫 How to reach me **izaheer612@gmail.com**
 - ⚡ Keyword **Do it until you make it.**
+- 📑 Download my resume from [here](https://imranzaheer-resume.tiiny.site).
 
 ### Projects
 
