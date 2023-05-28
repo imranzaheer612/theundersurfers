@@ -47,7 +47,7 @@ enableEmoji = true
         name = "Posts"
         url = "/posts/"
         # title will be shown when you hover on this menu link.
-        title = ""
+        title = "Read Blogs"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "tags"
@@ -55,7 +55,7 @@ enableEmoji = true
         post = ""
         name = "Tags"
         url = "/tags/"
-        title = ""
+        title = "See all tags"
         weight = 2
       [[languages.en.menu.main]]
         identifier = "categories"
@@ -63,7 +63,7 @@ enableEmoji = true
         post = ""
         name = "Categories"
         url = "/categories/"
-        title = ""
+        title = "See blog Categories"
         weight = 3
       [[languages.en.menu.main]]
         identifier = "documentation"
@@ -71,7 +71,7 @@ enableEmoji = true
         post = ""
         name = "Docs"
         url = "/categories/documentation/"
-        title = ""
+        title = "Read my documentations"
         weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
@@ -79,7 +79,7 @@ enableEmoji = true
         post = ""
         name = "About"
         url = "/about/"
-        title = ""
+        title = "Read about me"
         weight = 5
       [[languages.en.menu.main]]
         identifier = "github"
