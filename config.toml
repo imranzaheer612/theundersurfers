@@ -91,9 +91,9 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Development Blogs by Imran Zaheer. Learn about new technologies, best practices and problems faced in Software Engineering."
+      description = "Development Blogs by Imran Zaheer. I am a software enginner and will teach about new technologies, best practices and problems faced in Software Engineering."
       # site keywords
-      keywords = ["Theme", "Hugo"]
+      keywords = ["imran zaheer", "theundersurfers", "blog", "dev", "software engineer"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -156,7 +156,7 @@ enableEmoji = true
       # Social config in home page
       [languages.en.params.social]
         GitHub = "imranzaheer612"
-        Linkedin = "imran-zaheer-116aa3229/"
+        Linkedin = "mimranzaheer"
         Twitter = "ImranZaheer612"
         Instagram = "izr_612/"
         Facebook = ""
@@ -500,17 +500,17 @@ enableEmoji = true
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = true
-      Linkedin = false
-      Whatsapp = false
+      Facebook = false
+      Linkedin = true
+      Whatsapp = true
       Pinterest = false
       Tumblr = false
       HackerNews = true
-      Reddit = false
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
