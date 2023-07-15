@@ -91,7 +91,7 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Development Blogs by Imran Zaheer. I am a software enginner and will teach about new technologies, best practices and problems faced in Software Engineering."
+      description = "Dev blogging by Imran Zaheer. I am a software enginner and will teach about new technologies, best practices and problems faced in Software Engineering."
       # site keywords
       keywords = ["imran zaheer", "theundersurfers", "blog", "dev", "software engineer"]
       # App icon config

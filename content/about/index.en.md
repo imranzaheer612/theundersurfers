@@ -30,17 +30,29 @@ seo:
 
 ### About
 
-**`Digital Craftsman (Developer/Creator)`**
+**`Software Engineer (Developer/Creator)`**
 
-I'm an indie software developer and tech enthusiast. All coding projects are built from the ground up, from planning and designing to solving real-life problems with code. Love to work on new technologies and am always eager to learn new ones. Interested in Networks, Web, and System Designs.
+I'm an indie software developer and tech enthusiast. All coding projects are built from the ground up, from planning and designing to solving real-life problems with code. Love to work on new technologies and am always eager to learn new ones. Interested in Networks, Web, System Designs and Databases.
 
 **_[thenundersurfers](https://theundersurfers.netlify.app/)_** is my blogging site.
 
 - 📫 How to reach me **izaheer612@gmail.com**
 - ⚡ Keyword **Do it until you make it.**
-- 📑 Download my resume from [here](https://imranzaheer-resume.tiiny.site).
+- 📑 Download my **resume from [here](https://imranzaheer-resume.tiiny.site)**.
 
 ### Projects
+
+<div align="left">
+    <h4 align="center" id="imgursniper">Reliable UDP</h4>
+    <p align="center">
+        Implementing reliable protocol of the udp to transfer video files. <br/>
+        Making <b>UDP</b> reliable by implementing selective repeat, timeout and sequence numbers.  <br/>
+        <img src="https://cdn.kastatic.org/ka-perseus-images/d09f9d37ff2a2deb21a8822f8c99ba6b86319f0b.svg" width=600>
+    </p>
+    <p align="right"><a href="https://github.com/imranzaheer612/reliableUDP"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
+</div>
+
+---
 
 <div align="left">
     <h4 align="center">Natours</h4>
@@ -122,17 +134,6 @@ I'm an indie software developer and tech enthusiast. All coding projects are bui
 
 ---
 
-<div align="left">
-    <h4 align="center" id="imgursniper">Reliable UDP</h4>
-    <p align="center">
-        Implementing reliable protocol of the udp to transfer video files. <br/>
-        Making <b>UDP</b> reliable by implementing selective repeat, timeout and sequence numbers.  <br/>
-        <img src="https://cdn.kastatic.org/ka-perseus-images/d09f9d37ff2a2deb21a8822f8c99ba6b86319f0b.svg" width=600>
-    </p>
-    <p align="right"><a href="https://github.com/imranzaheer612/reliableUDP"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
-</div>
-
----
 
 <div align="left">
     <h4 align="center">Trie Dictionary</h4>
