@@ -2,9 +2,9 @@
     {{- .Params.Title | default (T .Section) | default .Section | dict "Some" | T "allSome" }} - {{ .Site.Title -}}
 {{- end -}}
 
-{{- define "robots" -}}
+<!-- {{- define "robots" -}}
 <meta name="robots" content="noindex, follow"/>
-{{- end -}}
+{{- end -}} -->
 
 {{- define "content" -}}
     <div class="page archive">
