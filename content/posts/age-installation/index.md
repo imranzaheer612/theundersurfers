@@ -118,11 +118,12 @@ git clone https://github.com/apache/age.git
 
 #### Installing
 
-Now we will configure age with PostgreSQL.
+Now we will install the extension AGE on PostgreSQL. First checkout to the PG11 branch.
 
 ```bash
 
 cd age/
+git checkout PG11
 
 # install
 sudo make PG_CONFIG=/home/imran/age_installation/pg/postgresql-11.18/bin/pg_config install
@@ -151,7 +152,7 @@ So we named our database cluster `demo`.
 
 ### Start Server
 
-Now start the server and make a database named `demodb`
+Now start the server. We will make a simple database named `demodb`, however a database named `postgres` is also created by default.
 
 ```bash
 bin/pg_ctl -D demo -l logfile start
@@ -248,7 +249,7 @@ dbname: demodb;
 
 **Note** that If you are following the above steps and installed postgres form source, then postgres a user would be created automatically during the installation. The `username` will be same as the name of your linux user. In my case a user with name `imran` was created as my linux user name was `imran`. Also there would be no password on this default user, you can set the password later.
 
-In my case i used the following settings.
+In my case I used the following settings.
 
 ```bash
 url: localhost;
@@ -257,11 +258,13 @@ port: 5432;
 
 username: imran;
 
-# radom pass as password is not set for this user.
 pass: 1234;
 
 dbname: demodb;
 ```
+
+Here I am just giving a radom pass for now, as I haven't set any password yet for the user `imran` yet, also auth mode is set to trust so no error would be thrown on a invalid pass.
+
 
 ![Untitled](https://firebasestorage.googleapis.com/v0/b/imagehosting-d913b.appspot.com/o/Install%20AGE%20on%20you%20Machine%20d9843f0f39df418e80ca089691cec847_Untitled%202_1670247505361..png?alt=media&token=8704df66-450b-418d-8a42-369b90784a24)
 
