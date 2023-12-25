@@ -30,7 +30,10 @@ I have just created to the point notes for each chapter and will try to explain 
 This chapters mostly covers the structures and designs in PostgreSQL Database Clusters, Databases,  and Tables
 
 1. **Logical structure of db cluster**
-    1. Database cluster —> Databases —> table, indexes, views
+    1. *Database cluster —> Databases —> table, indexes, views*
+
+    Database clusters includes databases which further includes the table, indexes and views. You can see the similar structure with the directories too.
+
 2. **Physical structure of db cluster**
     1. Database cluster : There is a `PGDATA`  directory created.
     2. Databases : Under Data directory there are sub dirs for databases.
@@ -117,7 +120,7 @@ tables , indexes layout `base/16384/18740`
 
 - Runs Semantic analysis on parse Tree
 - Generate a Query Tree.
-- Root of the tree is Query Stmt. Defined in `parsenode.h (**[postgres](https://github.com/postgres/postgres)/[src](https://github.com/postgres/postgres/tree/master/src)/[include](https://github.com/postgres/postgres/tree/master/src/include)/[nodes](https://github.com/postgres/postgres/tree/master/src/include/nodes)/parsenodes.h**)`
+- Root of the tree is Query Stmt. Defined in `parsenode.h` [postgres/src/include/nodes/parsenodes.h](https://github.com/postgres/postgres/tree/master/src/include/nodes)
     
     {{< image src="https://firebasestorage.googleapis.com/v0/b/imagehosting-d913b.appspot.com/o/pginternals-img%2Fpginternals-img_fig-3-03_1702145882480..png?alt=media&token=767eee24-a6d1-45f7-b8a3-f4167bb82a96" >}}
     
