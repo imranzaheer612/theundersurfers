@@ -1,7 +1,7 @@
 ---
 title: "Postgres Internals Working"
 date: 2023-12-09T23:38:04+05:00
-draft: false
+draft: true
 
 description: "Summary and notes for the first 3 chapters of the book pg-internals. You will learn about postgres internal structus, designs, memory, process managment and more"
 
