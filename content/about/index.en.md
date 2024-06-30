@@ -103,7 +103,7 @@ I'm an software developer and tech enthusiast. Worked in C, Java, Dotnet and Pos
 
 ---
 
-<a href="mailto:izaheer612@gmail.com"><b>📧 contact me!</b></a>
+<a href="mailto:imran.zhir@gmail.com"><b>📧 contact me!</b></a>
 
 <!-- <h3 align="left">Follow me on:</h3> -->
 
@@ -116,9 +116,3 @@ I'm an software developer and tech enthusiast. Worked in C, Java, Dotnet and Pos
 <a href="https://medium.com/@izaheer612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@izaheer612" height="30" width="40" /></a>
 <a href="https://github.com/imranzaheer612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="izr_612" height="30" width="40" /></a>
 </p>
-
-<!-- <h3 align="left">Languages and Tools:</h3> -->
-
-### Languages and Tools:
-
-See my profile at showcase to see which languages and tools i use [showwcase.com/imranzaheer612603](https://www.showwcase.com/imranzaheer612603)
