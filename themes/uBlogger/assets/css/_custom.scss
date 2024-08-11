@@ -95,3 +95,7 @@ $base: 0.6rem;
     transform: translateY($base * 8) scale(0.5);
   }
 }
+
+.post-tags-summary-image {
+  display: none;
+}
