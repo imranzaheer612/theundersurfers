@@ -76,6 +76,19 @@ I'm an software developer and tech enthusiast. Worked in C, Java, Dotnet and Pos
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
 </div>
 
+
+---
+
+<div align="left">
+    <h4 align="center" id="imgursniper">Agens Installers & RPMs</h4>
+    <p align="center">
+        Building agens server Windows & Linux compatible Bitrock Installers<br/>
+        Building Bitrock Installers and RPMs for agens connectors ODBC, JDBC, Dotnet, OCL.<br/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/RPM_Logo.svg/240px-RPM_Logo.svg.png" width=400>
+    </p>
+    <p align="right"><a href="https://github.com/imranzaheer612/reliableUDP"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
+</div>
+
 ---
 
 <div align="left">
@@ -89,30 +102,13 @@ I'm an software developer and tech enthusiast. Worked in C, Java, Dotnet and Pos
 </div>
 
 ---
-
-<div align="left">
-    <h4 align="center" id="imgursniper">Flight-Fare-Prediction</h4>
-    <p align="center">
-        Flight fare predicting model. <br/>
-        Using some regression models and EDA techniques to predict flight prices. <br/>
-        Making <b>UDP</b> reliable by implementing selective repeat, timeout and sequence numbers.  <br/>
-        <img src="https://github.com/imranzaheer612/flight-fare-prediction-regression/raw/main/predicted.jpg" width=500>
-    </p>
-    <p align="right"><a href="https://github.com/imranzaheer612/flight-fare-prediction-regression"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
-</div>
-
----
-
-<a href="mailto:imran.zhir@gmail.com"><b>📧 contact me!</b></a>
-
 <!-- <h3 align="left">Follow me on:</h3> -->
 
-### Follow me on:
+### Follow me:
 
 <p align="left">
 <a href="https://twitter.com/imranzaheer612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="imranza61398327" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/mimranzaheer/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imran-zaheer-116aa3229" height="30" width="40" /></a>
-<a href="https://hashnode.com/@imranzaheer" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="@imranzaheer" height="30" width="40" /></a>
 <a href="https://medium.com/@izaheer612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@izaheer612" height="30" width="40" /></a>
 <a href="https://github.com/imranzaheer612" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="izr_612" height="30" width="40" /></a>
 </p>
