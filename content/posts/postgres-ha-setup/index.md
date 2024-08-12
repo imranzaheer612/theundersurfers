@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL HA Setup"
 date: 2024-08-11T17:34:52+09:00
-draft: true
+draft: false
 
 description: "Setting up postgresql for HA and failover handling using streaming replication and pgpool. Step by step commands to set up your postgresql clusters for high availability."
 
