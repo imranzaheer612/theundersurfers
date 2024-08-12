@@ -125,3 +125,18 @@ code:not([class*="language-"]) {
   padding: 1px 5px;
   border-radius: 1px;
 }
+
+.block-author{
+  display: flex;
+
+  .author-info {
+    line-height: 1.2rem;
+    font-size: 13px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 0%;
+  }
+}
