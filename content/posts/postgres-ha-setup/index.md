@@ -1,55 +1,57 @@
 ---
-title: "Postgres Ha Setup"
+title: "PostgreSQL HA Setup"
 date: 2024-08-11T17:34:52+09:00
 draft: true
 
-description: "Add description for the post here."
+description: "Setting up postgresql for HA and failover handling using streaming replication and pgpool. Step by step commands to set up your postgresql clusters for high availability."
 
 resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["tags"]
-categories: ["Documentation"]
+tags: ["pgpool", "database", "load balancing", "database cluster"]
+categories: ["Pgpool"]
 theme: "full"
 images: ["https://theundersurfers.com/postgres-ha-setup/featured-image.webp"]
 seo:
   images: ["https://theundersurfers.com/postgres-ha-setup/featured-image.webp"]
 ---
 
+<!--more-->
 
 Simple step by step command to setup up postgres server for HA with pgpool
 
-## Setup
 ### Streaming Replication
 
 Create primary db:
-```
+```bash
  bin/initdb primary
 ```
-Change in `postgresql.conf`. For now I am jsut settting the listen_address  to `*` but in real scenarios we only allow specific server address to listen at. Also change the port no
+Change in `postgresql.conf`. For now I am just setting the listen_address  to `*` but in real scenarios we only allow specific server address to listen at. Also change the port no
 
-```jsx
-
-listen_address = '*' // not safe
-port=5433 //  default:5432
+```conf
+listen_address = '*'  # not safe
+port=5433             #  default:5432
 ```
 
-Create user rep_user with replication flag set
-`CREATE USER repuser REPLICATION;`
+Create user `rep_user` with replication flag set
+```sql
+CREATE USER repuser REPLICATION;
+```
+Add repuser in pg_hba.conf as ipv connections
+```conf
+host    all             repuser             127.0.0.1/32            trust
+```
 
-* add repuser in pg_hba.conf as ipv connections
-`host    all             repuser             127.0.0.1/32            trust`
+Now restart server. We have to make a replica db now. For than we can use `pg_basebackup`, use the following command to make the secondary server 
 
-* restart server
+```bash
+bin/pg_basebackup -h localhost -U  repuser --checkpoint=fast -D ha/replica -R --slot=some_name -C --port=5433
+```
+New data cluster will be cerated,  open it and configure the port no to be different from the primary server. Set it to `5434` for now.
 
-* use bg_basebackup comamnds to make replica
-`bin/pg_basebackup -h localhost -U  repuser --checkpoint=fast -D ha/replica -R --slot=some_name -C --port=5433`
-
-* new datadir will be crerated ,  open it and configure the port no
-
-* now start the new cluster dir, straming would be runing now.
-
+Now our primary server would be running by now, start the recently created replica sever. It will be automatically be connected to the primary server and will start the streaming replication. You can notice that the streaming replication is been started successfully in the sever logs.
+```bash
 imran@Imrans-MacBook-Air pg-15-bins % bin/pg_ctl -D ha/replica start  
 waiting for server to start....2024-07-18 14:54:09.625 KST [15363] LOG:  starting PostgreSQL 15.3 on aarch64-apple-darwin23.5.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
 2024-07-18 14:54:09.626 KST [15363] LOG:  listening on IPv6 address "::", port 5434
@@ -67,15 +69,24 @@ server started
 imran@Imrans-MacBook-Air pg-15-bins % 
 ```
 
-## Setting up Pgpool
+### Setting up Pgpool
 
-```jsx
-* copy the sample file in etc 'pgpool.conf.sample' as 'pgpool.conf'
-
+Now we can add pgpool over our setup for the connection pooling. Install the pgpool maybe from the rpms availables at there site or may be from the source. Open up the `pgpool.sample` if not available copy it from the sample conf file.
+```bash
 `etc % cp pgpool.conf.sample pgpool.conf`
+```
 
+Now change some configrations for the pgpool.
+```bash
 listens_address = '*'
 
+# primary node (localhost for now)
+backend_hostname1 = 'localhost'
+backend_port1 = 5433
+backend_weight1 = 0
+backend_data_directory1 = '/Users/imran/Desktop/work/db/server/postgres/pg-master/builds/pg-15-bins/ha/primary'
+
+# set replica node confs
 backend_hostname1 = 'localhost'
 backend_port1 = 5434
 backend_weight1 = 1
@@ -95,24 +106,21 @@ health_check_period = 10
 pid_file_name = 'pgpool.pid'
 
 # change log statements setting
-
 log_statement = on 
                                    # Log all statements
 log_per_node_statement = on 
-
 ```
 
-## Settings for HA
+### Settings for HA
 
-```jsx
-* go to primary db conf
+Now we should add some handling for the failover scenarios and improve our HA. First open the `postgersql.conf` for the primary server and change following confs.
+```bash
 synchronous_commit = 'remote_apply'
-
 synchronous_standby_names = '*' # standby servers that provide sync rep
-
-* we need to setup script for fail_over. jsut make a fail_over.sh script and place it some where
-
 ```
+
+Now we need a simple script that will be executed in case of the fail over. Make a script fail_over.sh and place it somewhere.
+```bash
 #! /bin/sh
 failed_node=$1
 trigger_file=$2
@@ -125,23 +133,21 @@ touch $trigger_file
 exit 0;
 ```
 
-* now go to the pgpool conf change
+Now open the `pgpool.conf` and set the following confs.
 
+```conf
 failover_command = 'failover.sh %d replica_db/trigger_file.trg'
-
-* go to the replica_db
-
-promote_trigger_file = '/home/ubuntu/Desktop/db/pg15/rep/data2/down.trg' 
-
-# when every primary db fials,  pgpool created the trigger file, replica db keep on
-# looking for this file and when get it whrn failover happers
-
 ```
 
-## Imp commands
 
-```jsx
+Open configrations for the replica_db and set this.
+```conf
+promote_trigger_file = '/home/ubuntu/Desktop/db/pg15/rep/data2/down.trg' 
+```
 
+Now the setup is done for handling the failover scenario. Now when ever the primary db fials, the pgpool creates the trigger file. The replica db will keep on looking the for the trigger file, when ever the pgpool creates the trigger file the failover script will be executed.
+
+```bash
 postgres=# show pool_nodes;
  node_id | hostname  | port | status | pg_status | lb_weight |  role   | pg_role | select_cnt | load_balance_node | replication_delay | replication_state | replication_sync_state | last_status_change  
 ---------+-----------+------+--------+-----------+-----------+---------+---------+------------+-------------------+-------------------+-------------------+------------------------+---------------------
