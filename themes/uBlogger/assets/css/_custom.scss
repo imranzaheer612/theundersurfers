@@ -99,3 +99,24 @@ $base: 0.6rem;
 .post-tags-summary-image {
   display: none;
 }
+
+.article-post {
+    font-size: 16px;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  line-height: 1.4;
+  font-size: 15px;
+
+}
+
+pre[class*="language-"] {
+  border-radius: 3px;
+}
+
+
+@media only screen and (max-width: 680px) {
+  .featured-image {
+    height: 40vh !important;
+  }
+}
