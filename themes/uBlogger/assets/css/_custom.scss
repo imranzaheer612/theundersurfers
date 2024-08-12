@@ -120,3 +120,8 @@ pre[class*="language-"] {
     height: 40vh !important;
   }
 }
+
+code:not([class*="language-"]) {
+  padding: 1px 5px;
+  border-radius: 1px;
+}
