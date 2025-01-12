@@ -1,7 +1,7 @@
 ---
 title: "Step-by-Step Guide to Compiling PostgreSQL on Windows using Chocolatey, Meson and Ninja"
 date: 2025-01-12T21:12:02+05:00
-draft: true
+draft: false
 
 description: "Learn how to set up dependencies and compile PostgreSQL on Windows using Chocolatey, Strawberry Perl, and Meson. This step-by-step guide simplifies the process, ensuring smooth compilation with additional support for libraries like OpenSSL and libxml."
 
