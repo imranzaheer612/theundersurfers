@@ -49,12 +49,12 @@ Now open the visual studio native x64 developer command line. Set the variable f
 SET PG_DEP=C:\Users\Imran\Desktop\work\pg\postgres\dep\all-deps-win64
 
 -- use (--wipe) if you wanna reconfigure from scratch
-meson setup --prefix=path\to\installation\dir -Dextra_include_dirs=%PG_DEP%\include -Dextra_lib_dirs=%PG_DEP%\lib\amd64 --cmake-prefix=%PG_DEP% --pkg-config-path=%PG_DEP%\lib\pkgconfig -Dgssapi=disabled
+meson setup build --prefix=path\to\installation\dir -Dextra_include_dirs=%PG_DEP%\include -Dextra_lib_dirs=%PG_DEP%\lib\amd64 --cmake-prefix=%PG_DEP% --pkg-config-path=%PG_DEP%\lib\pkgconfig -Dgssapi=disabled
 
 ```
 I just disabled the gssapi because there is a bug on postgres windows where gssapi and openssl cannot be compiled together. This will be fixed soon. For now just disable it.
 
-{{< admonition type=tip title="This is a tip" open=false >}}
+{{< admonition type=tip title="Setting Compilers" open=false >}}
 If you got stuck some where and want to reconfigure the meson setup from scratch use `—wipe` argument with the build dir as input.
 
 ```jsx
@@ -62,6 +62,22 @@ meson setup --wipe build
 ```
 
 For advance setup related to assigning specific compilers to the meson you can use the native `ini` file. https://mesonbuild.com/Machine-files.html#
+
+If you are stuck with some error like:
+```
+meson.build:9:0: ERROR: Failed running 'cl', binary or interpreter not executable
+```
+This mean meson cannot find the path to the specific compiler, use the native ini file in this case. Just create a ini file with a name of your choice and mention the path to the `cl.exe`
+```
+[binaries]
+c = 'C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.39.33218\bin\Hostx64\x64\cl.exe'
+cpp = 'C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.39.33218\bin\Hostx64\x64\cl.exe'
+```
+After that now just append the argument the the meson setup command
+```
+--native-file=..\..\x86_64-w64.ini
+```
+
 {{< /admonition >}}
 
 ## Installation
