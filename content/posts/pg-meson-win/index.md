@@ -29,7 +29,7 @@ choco install sed
 choco install gzip
 choco install strawberryperl
 choco install diffutils
-choco install pkgconflite
+choco install pkgconfiglite
 
 ```
 
