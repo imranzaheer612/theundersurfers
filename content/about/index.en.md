@@ -31,78 +31,12 @@ seo:
 
 **`Software Engineer`**
 
-I'm an software developer and tech enthusiast. Worked in C, Java, Dotnet and PostgreSQL Internals. Worked on database projects JDBC, ODBC, DOTNET database drivers development. Handling postgres upstream merges and adding oracle compatible features. Postgres and Connectors Windows Installers and RPM packaging. All coding projects are built from the ground up, from planning and designing to solving real-life problems with code. Love to work on new technologies. Interested in Networks, System Designs and Database Internals.
+I'm an software developer and tech enthusiast, working on PostgreSQL Internals. Love to work on Networks, System Designs and Database Internals.
 
 **_[thenundersurfers](https://theundersurfers.netlify.app/)_** is my blogging site.
 
 - 📫 How to reach me **imran.zhir@gmail.com**
 - ⚡ Keyword **Do it until you make it.**
-
-### Projects
-
-
-<div align="left">
-    <h4 align="center">AgensSQL</h4>
-    <p align="center">
-        📍 Improved PostgreSQL DB engine, Oracle compatibility.<br/>
-        <b>AgensSQL</b> DBMS based on open source PostgreSQL, with enhanced Oracle compatibility<br/>  and security features, and can even be used with the most advanced graph analysis technology.<br/>
-        - Worked on Upstream merges and adding Oracle features.<br/>
-        - Creating Bitorck Windows installers for AgensSQL.<br/>
-        You can take a look at the product
-        <a href="https://bitnine.net/agenssql/">agenssql<a> 
-        <br/><br/><br/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Agens_Enterprise_Package.png" width=400>
-    </p>
-    <p align="right"><a href="https://github.com/bitnine-oss">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
-</div>
-
----
-
-<div align="left">
-    <h4 align="center">Agens Connectors</h4>
-    <p align="center">
-        📍 JDBC, ODBC, DOTNET Drivers for AgenSQL<br/>
-        <b>Connectors</b> based on opensource npgsql, pgjdbc & psqlodbc <br/>
-        drivers with added oracle compatibility support.<br/>
-        - Worked on Upstream merges. Adding Oracle and AgensSQL compatibility.<br/>
-        - Build Bitrock Windows Installers and RPM packages for the drivers.<br/>
-        You can take a look at the product
-        <a href="https://bitnine.net/agenssql/">agenssql<a> 
-        <br/><br/><br/>
-        <img src="/about/connectors.png" width=700>
-    </p>
-    <p align="right"><a href="https://github.com/bitnine-oss">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
-</div>
-
-
----
-
-<div align="left">
-    <h4 align="center" id="imgursniper">Agens Installers & RPMs</h4>
-    <p align="center">
-        Building agens server Windows & Linux compatible Bitrock Installers<br/>
-        Building Bitrock Installers and RPMs for agens connectors ODBC, JDBC, Dotnet, OCL.<br/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/RPM_Logo.svg/240px-RPM_Logo.svg.png" width=400>
-    </p>
-    <p align="right"><a href="https://github.com/imranzaheer612/reliableUDP"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
-</div>
-
----
-
-<div align="left">
-    <h4 align="center" id="imgursniper">Reliable UDP</h4>
-    <p align="center">
-        Implementing reliable protocol of the udp to transfer video files. <br/>
-        Making <b>UDP</b> reliable by implementing selective repeat, timeout and sequence numbers.  <br/>
-        <img src="https://cdn.kastatic.org/ka-perseus-images/d09f9d37ff2a2deb21a8822f8c99ba6b86319f0b.svg" width=600>
-    </p>
-    <p align="right"><a href="https://github.com/imranzaheer612/reliableUDP"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=20 align="center"> Project page</a></p>
-</div>
-
----
-<!-- <h3 align="left">Follow me on:</h3> -->
 
 ### Follow me:
 
