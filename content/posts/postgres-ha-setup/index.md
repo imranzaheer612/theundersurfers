@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["pgpool", "database", "load balancing", "database cluster"]
+tags: ["underthehood", "setup"]
 categories: ["Pgpool"]
 theme: "full"
 images: ["https://theundersurfers.com/postgres-ha-setup/featured-image.webp"]

@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["EDB BDR Setup", "PostgreSQL Distributed Cluster", "EPAS Installation", "Single Host Cluster Setup", "EDB Postgres Guide", "High Availability Postgres", "PostgreSQL Ubuntu Setup", "BDR with EPAS", " Multi-Master Replication"]
+tags: ["setup", "compilation"]
 categories: ["Documentation"]
 theme: "full"
 images: ["https://theundersurfers.com/pg-bdr/featured-image.webp"]

@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.png"
 
-tags: ["database", "mongodb", "mongoose", "data modelling"]
+tags: ["underthehood"]
 categories: ["DATABASE"]
 theme: "full"
 images: ["https://theundersurfers.netlify.app/mongoose-data-modelling/featured-image.png"]

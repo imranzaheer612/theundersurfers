@@ -9,15 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags:
-  [
-    "AI",
-    "Price Prediction",
-    "Regression",
-    "Hyper parameter tunning",
-    "Eda",
-    "One hot encoding",
-  ]
+tags: ["setup"]
 categories: ["AI", "Documentation"]
 theme: "full"
 ---

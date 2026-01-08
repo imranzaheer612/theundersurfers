@@ -7,7 +7,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["wireless", "rc4", "wep working", "Wired Equivalent Privacy"]
+tags: ["underthehood"]
 categories: ["Network Security"]
 theme: "full"
 ---

@@ -8,7 +8,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.png"
 
-tags: ["OS"]
+tags: ["underthehood", "setup"]
 categories: ["OS"]
 theme: "full"
 ---

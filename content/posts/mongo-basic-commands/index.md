@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.png"
 
-tags: ["web", "database", "mongodb", "mongodb shell"]
+tags: ["underthehood", "performance"]
 categories: ["DATABASE"]
 theme: "full"
 images: ["https://theundersurfers.netlify.app/mongo-basic-commands/featured-image.png"]

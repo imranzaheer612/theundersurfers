@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["pgpool", "database", "load balancing", "database cluster"]
+tags: ["underthehood"]
 categories: ["Pgpool", "Database"]
 theme: "full"
 images:

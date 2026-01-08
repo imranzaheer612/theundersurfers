@@ -1,15 +1,15 @@
 ---
-title: "Step-by-Step Guide to Compiling PostgreSQL on Windows using Chocolatey, Meson and Ninja"
+title: "Compile PostgreSQL on Windows"
 date: 2025-01-12T21:12:02+05:00
 draft: false
 
-description: "Learn how to set up dependencies and compile PostgreSQL on Windows using Chocolatey, Strawberry Perl, and Meson. This step-by-step guide simplifies the process, ensuring smooth compilation with additional support for libraries like OpenSSL and libxml."
+description: "Compile PostgreSQL source code on Windows using Meson and ninja. This step-by-step guide for smooth compilation with additional support for libraries like OpenSSL and libxml."
 
 resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["PostgreSQL Compilation", "Chocolatey Setup", "Meson Ninja Build", "Open Source Databases", "PostgreSQL Windows Guide", "PostgreSQL Development"]
+tags: ["compilation", "setup"]
 categories: ["Documentation"]
 theme: "full"
 images: ["https://theundersurfers.com/pg-meson-win/featured-image.webp"]
@@ -19,7 +19,7 @@ seo:
 
 <!--more-->
 
-## Dependencies
+## Install Dependencies for PG Windows
 
 Use chocolatey for install dependencies for the postgres windows compilation.  Use strawberry perl instead of the active state perl as it is easy to setup. Also for know we will prefer the pkgconflite from the choco which is the lighter version of pkg-config and also simple for the setup. The pkg-config which comes with strawberry-perl doesn't work and get ignored.
 
@@ -41,7 +41,7 @@ pip install meson ninja
 
 Now you need some additional dependencies if you wanna compile the postgres with some additional  support like openssl, gsspapi etc. These dependencies is hrd to setup on perl but luckily Dave Page has organized a workflow for these dependencies build. You can just simply download the artifacts `all-deps-win64` from the repo. https://github.com/dpage/winpgbuild/actions/
 
-## Compilation
+## Compilation with Visual Studio
 
 Now open the visual studio native x64 developer command line. Set the variable for your installed dependencies first. And then use meson fro the compilation.
 
@@ -80,7 +80,7 @@ After that now just append the argument the the meson setup command
 
 {{< /admonition >}}
 
-## Installation
+## Installing Postgres and dependant Libraries
 
 Now proceed towards the installation.
 
@@ -110,7 +110,7 @@ copy %PG_DEP%\bin\libzstd.dll %PG_INSTALL%\bin
 copy %PG_DEP%\bin\zlib1.dll %PG_INSTALL%\bin
 ```
 
-## Cluster Init
+## Initialize the Postgresql Windows Cluster
 
 Now Initialize the cluster and enjoy the postgres.
 

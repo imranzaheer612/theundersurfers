@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["JSON in PostgreSQL", "JSON_TABLE()", "PostgreSQL 17", "JSON Querying", "JSON Functions", "NoSQL vs SQL"]
+tags: ["underthehood"]
 categories: ["Database"]
 theme: "full"
 images: ["https://theundersurfers.com/pg-jsontables/featured-image.webp"]

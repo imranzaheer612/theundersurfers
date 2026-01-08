@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["Raft", "DistributedSystems", "Replication", "DistributedComputing", "FaultTolerance", "Consensus", "Election"]
+tags: ["underthehood"]
 categories: ["Distributed Systems"]
 theme: "full"
 images: ["https://theundersurfers.com/raft/featured-image.webp"]

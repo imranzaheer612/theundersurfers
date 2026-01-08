@@ -83,9 +83,9 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Dev blogging by Imran Zaheer. I am a software enginner and will teach about new technologies, best practices and problems faced in Software Engineering."
+      description = "Dev blogging by Imran Zaheer. I am a software enginner working on postgresql internals hacking and will teach about new technologies, best practices and problems faced in Software Engineering or in Database Internals."
       # site keywords
-      keywords = ["imran zaheer", "theundersurfers", "blog", "dev", "software engineer"]
+      keywords = ["theundersurfers", "blog", "dev", "software engineer", "postgres", "postgresql", "imran zaheer"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher

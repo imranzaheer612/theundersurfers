@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.png"
 
-tags: ["database", "mongodb", "mongoose", "indexes"]
+tags: ["underthehood", "performance"]
 categories: ["DATABASE"]
 theme: "full"
 

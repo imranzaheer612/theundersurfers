@@ -9,7 +9,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.webp"
 
-tags: ["apache", "graphs"]
+tags: ["underthehood", "setup", "compilation"]
 categories: ["Database", "Documentation"]
 theme: "full"
 images:
